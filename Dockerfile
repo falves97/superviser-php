@@ -1,7 +1,10 @@
-LABEL author.name='Fernando Braga Alves'
-LABEL author.email='f.braga.alves1@gmail.com'
-
 FROM php:8.3-cli-alpine
+
+LABEL org.opencontainers.imageauthors.name='Fernando Braga Alves'
+LABEL org.opencontainers.imageauthors.email='f.braga.alves1@gmail.com'
+LABEL org.opencontainers.image.source=https://github.com/falves97/superviser-php/
+LABEL org.opencontainers.image.description="Basic image to create PHP processes with supervisor"
+LABEL org.opencontainers.image.licenses=MIT
 
 RUN apk add --update supervisor && rm  -rf /tmp/* /var/cache/apk/*
 
