@@ -10,12 +10,3 @@ To use this image you can use the command:
 docker run -v path/to/your/conf/:/etc/supervisor/conf.d/ \
 falves97/supervisor-php:latest
 ```
-
-# Config
-In your configuration files you need to set the user to root:
-
-```
-# path/to/your/conf/program-example.config
-[program:example]
-user=root
-```
